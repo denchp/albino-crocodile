@@ -1,0 +1,44 @@
+.item {
+    display: inline-block;
+    border: .5em solid black;
+    margin: 5em;
+    .wrapper {
+        background: linear-gradient(135deg, grey, rgb(54, 53, 53), grey);
+        padding: .5em;
+    }
+
+    .wrapper::before{
+        background: linear-gradient(0deg, #e6ccb8, #c2a58f);
+        content: " ";
+        position: absolute;
+        margin: .25em;
+        height: 9em;
+        width: 9em;
+    }
+
+    .rarity {
+        width: 8em;
+        height: 8em;
+        margin: .5em;
+        border: .25em solid black;
+        position: relative;
+    }
+
+    .rarity.rare {
+        background: linear-gradient(135deg, #25cd8e, 75%, black 80%);
+    }
+
+    .rarity.unique {
+        background: linear-gradient(135deg, #ff8400, 75%, black 80%);
+    }
+    
+    .container {
+        position: absolute;
+        margin: .25em;
+        min-width: 7.5em;
+        min-height: 7.5em;
+        background-color: black;
+        
+    }
+}
+
